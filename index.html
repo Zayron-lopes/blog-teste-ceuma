@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog-teste-Ceuma</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Blog-teste-Ceuma</h1>
+
+        <nav>
+            <a href="#Noticias">Noticias</a>
+            <a href="#Investigações">Investigações</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <article id="noticias">
+            <h2>Escalas de trabalho, salário fixo, delivery e atacado: grupo que traficava drogas e fuzis em ‘ritmo empresarial’ é alvo de operação no PR e SC</h2>
+
+            <p>
+                Segundo a polícia, 12 pessoas foram presas e outras três estão foragidas. Os agentes também encontraram armas, munições, além de uma grande quantidade de maconha, crack e cocaína. Parte das drogas já estava fracionada e embalada para a venda. Os entorpecentes foram encontrados em dois endereços.</p>
+
+            <img src="img/fotodasapreensoes.webp" alt="Foto das apreensões" width="600">
+        </article>
+
+        <article id="programacao">
+            <h2>Alexandre Pires é alvo de operação da Polícia Federal</h2>
+
+            <p> O cantor Alexandre Pires é um dos alvos da segunda fase da Operação Disco de Ouro, deflagrada pela PF (Polícia Federal) nesta quarta-feira (23). A ação investiga uma organização criminosa suspeita de atuar em lavagem de capitais, falsidade ideológica e outros crimes de caráter transnacional.
+                Segundo a PF, o grupo também estaria ligado ao financiamento e à logística do garimpo ilegal na Terra Indígena Yanomami. Nesta quarta, são cumpridos 12 mandados de busca e apreensão e 17 ordens judiciais de sequestro de bens e valores, expedidos pela Justiça Federal. As investigações apontam para a movimentação e ocultação de mais de US$ 48 milhões por meio de empresas brasileiras e estrangeiras, operações financeiras internacionais, contas de terceiros e mecanismos informais de compensação financeira. A estrutura também teria utilizado pessoas físicas e jurídicas para pulverizar recursos e dificultar o rastreamento do dinheiro.</p>
+
+            <img src="img/AlexandrePires.jfif" alt="Alexandre Pires" width="600">
+        </article>
+
+    </main>
+
+    <aside id="contato">
+
+        <h2>Inscreva-se no blog</h2>
+
+        <form method="get">
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" minlength="3" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="18" max="120" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="assunto">Assunto:</label>
+
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="tecnologia">Noticias</option>
+                    <option value="programacao">Investigação</option>
+                    <option value="carreira">Famosos</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="checkbox" id="termos" name="termos" value="aceito" required>
+                <label for="termos">Aceito os termos</label>
+            </div>
+
+            <br>
+
+            <button type="submit">Inscrever-se</button>
+
+        </form>
+
+    </aside>
+
+</body>
+
+</html>
