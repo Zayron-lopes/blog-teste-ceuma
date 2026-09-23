@@ -1,0 +1,247 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+
+/* =========================================
+   MENU DE NAVEGAÇÃO
+========================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+/* =========================================
+   ARTIGOS
+========================================= */
+
+article {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+article img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+aside {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+aside h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+/* =========================================
+   ORGANIZAÇÃO DOS CAMPOS
+========================================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* =========================================
+   NOME + E-MAIL
+========================================= */
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* Cada campo fica organizado
+   em coluna */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   INPUT E SELECT
+========================================= */
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+
+/* Destaque quando o campo está selecionado */
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* =========================================
+   CHECKBOX
+========================================= */
+
+.termos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.termos input {
+    width: auto;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Efeito ao passar o mouse */
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 650px) {
+
+    /* Nome e e-mail passam
+       para uma coluna */
+
+    .linha {
+        flex-direction: column;
+    }
+
+
+    /* Menu também passa
+       para uma coluna */
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
